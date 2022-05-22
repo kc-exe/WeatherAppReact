@@ -1,0 +1,72 @@
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-image: url("./Image/sunset.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+header {
+  text-align: center;
+  color: azure;
+  font-style: italic;
+}
+h1 {
+  font-size: 6rem;
+}
+p {
+  font-size: 1.6rem;
+}
+.search {
+  text-align: center;
+  padding: 1rem;
+}
+.inputValue {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+}
+::placeholder {
+  color: #f8f8f8;
+}
+.container {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: saturate(180%) blur(10px);
+  border-radius: 25px;
+  color: azure;
+  display: flex;
+  width: 700px;
+  height: 700px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.top {
+  width: 100%;
+  margin: 0 1rem;
+}
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  border-radius: 12rem;
+  background-color: rgba(225, 225, 225, 0.2);
+  margin-bottom: 2%;
+}
+.middle {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  border-radius: 12rem;
+  background-color: rgba(225, 225, 225, 0.2);
+  margin-bottom: 2%;
+}
+.bold {
+  font-weight: 700;
+}
