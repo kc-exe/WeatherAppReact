@@ -5,7 +5,10 @@ body {
   background-image: url("./Image/sunset.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  
+}
+
+#root {
+  display: fluid;
 }
 header {
   text-align: center;
@@ -22,12 +25,16 @@ p {
   text-align: center;
   padding: 1rem;
 }
+.app {
+  display: fluid;
+  padding: 200px 0px;
+}
 .inputValue {
   text-align: center;
   color: #f8f8f8;
   font-style: italic;
   margin-right: 2%;
-  padding: 0.7rem 1.5rem;
+  padding: 0.2 1.5rem;
   font-size: 1.2rem;
   border-radius: 25px;
   border: 1px solid rgba(255, 255, 255, 0.8);
@@ -45,7 +52,7 @@ p {
   width: 700px;
   height: 700px;
   margin: auto;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
   position: relative;
   top: 10%;
   flex-direction: column;
@@ -62,6 +69,10 @@ p {
   border-radius: 12rem;
   background-color: rgba(225, 225, 225, 0.2);
   margin-bottom: 2%;
+}
+.icons {
+  height: 5rem;
+  width: 5rem;
 }
 .middle {
   display: flex;
