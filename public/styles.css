@@ -23,6 +23,10 @@ p {
   padding: 1rem;
 }
 .inputValue {
+  text-align: center;
+  color: #f8f8f8;
+  font-style: italic;
+  margin-right: 2%;
   padding: 0.7rem 1.5rem;
   font-size: 1.2rem;
   border-radius: 25px;
