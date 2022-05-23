@@ -15,21 +15,21 @@ function Input() {
     event.preventDefault();
   }
 
-  return (
-    <div className="input">
-      <div className="search">
-        <form onSubmit={savelocation}>
-          <input
-            className="inputValue"
-            value={location}
-            onChange={(event) => setLocation(event.target.value)}
-            type="text"
-            placeholder="enter the city name"
-          />
-          <input className="inputValue" type="submit" value="Search" />
-        </form>
-      </div>
+ return (
+    <div className="app">
       <div className="container">
+        <div className="search">
+          <form onSubmit={savelocation}>
+            <input
+              className="inputValue"
+              value={location}
+              onChange={(event) => setLocation(event.target.value)}
+              type="text"
+              placeholder="enter the city name"
+            />
+            <input className="inputValue" type="submit" value="Search" />
+          </form>
+        </div>
         <div className="top">
           <div className="location">
             <p>{data.name}</p>
