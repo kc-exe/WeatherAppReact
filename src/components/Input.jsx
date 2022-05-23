@@ -4,19 +4,24 @@ import axios from "axios";
 function Input() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState("");
+  const [icon, setIcon] = useState("");
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=c7802c927c8f52f8389fc5611a185eed`;
-  let icon = "";
+  let iicon = "";
+  let iconUrl = "";
   function savelocation(event) {
     axios.get(url).then((response) => {
       setData(response.data);
       console.log(response.data);
       console.log(response.data.weather[0].icon);
-      icon = response.data.weather[0].icon;
+      iicon = response.data.weather[0].icon;
+      iconUrl = "http://openweathermap.org/img/wn/" + iicon + "@2x.png";
+      console.log(iconUrl);
+      setIcon({ iurl: iconUrl });
     });
     setLocation(" ");
     event.preventDefault();
   }
-  const iconUrl = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+  //iconUrl = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
   console.log(iconUrl);
   return (
     <div className="app">
@@ -62,7 +67,7 @@ function Input() {
             {data.weather ? (
               <p className="bold">{data.weather[0].description}</p>
             ) : null}
-            <img src="iconUrl" alt="" />
+            <img className="icons" src={icon.iurl} alt="Weather discription" />
           </div>
           <div className="humidity">
             {data.main ? <p className="bold">{data.main.humidity}%</p> : null}
