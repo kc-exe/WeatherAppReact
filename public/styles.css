@@ -1,6 +1,4 @@
-html {
-  font-family: "Montserrat", sans-serif;
-}
+
 body {
   background-image: url("./Image/sunset.jpg");
   background-repeat: no-repeat;
@@ -14,6 +12,7 @@ header {
   text-align: center;
   color: azure;
   font-style: italic;
+  font-family: "Sacramento", cursive;
 }
 h1 {
   font-size: 6rem;
@@ -73,6 +72,7 @@ p {
 .icons {
   height: 5rem;
   width: 5rem;
+  font-weight: 700
 }
 .middle {
   display: flex;
